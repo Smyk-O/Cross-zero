@@ -143,7 +143,7 @@ class CrossZero {
   }
 
   // случайный ход AI
-  randomTurn = () => {
+  randomTurn () {
     let flag = false;
     while (!flag) {
       let randNum = Math.round((Math.random() * (9 - 1) + 1));
@@ -171,7 +171,7 @@ class CrossZero {
     
   }
 
-  // Рендер приложения, с проверкой на коком этапе мы находимся
+  // Рендер приложения, с проверкой на каком этапе мы находимся
   render() {
     this.table.innerHTML = '';
     if (this.gameStep === 'Start') {
